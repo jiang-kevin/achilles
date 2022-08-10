@@ -1,0 +1,10 @@
+{
+  "name": "achilles",
+  "packageManager": "yarn@3.2.2",
+  "scripts": {
+    "start": "node ./app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
