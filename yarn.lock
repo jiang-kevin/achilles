@@ -20,6 +20,7 @@ __metadata:
   resolution: "achilles@workspace:."
   dependencies:
     discord-interactions: ^3.2.0
+    dotenv: ^16.0.1
     express: ^4.18.1
     node-fetch: ^3.2.10
   languageName: unknown
@@ -135,6 +136,13 @@ __metadata:
   dependencies:
     tweetnacl: ^1.0.3
   checksum: 5d06632428c4715335bd8a8b086380ccdbb9d97c1a514040d97c6efeffb49b856da43d39728e1f77addd36b5f84d6928baca34ad36847e724923bacceaca9247
+  languageName: node
+  linkType: hard
+
+"dotenv@npm:^16.0.1":
+  version: 16.0.1
+  resolution: "dotenv@npm:16.0.1"
+  checksum: f459ffce07b977b7f15d8cc4ee69cdff77d4dd8c5dc8c85d2d485ee84655352c2415f9dd09d42b5b5985ced3be186130871b34e2f3e2569ebc72fbc2e8096792
   languageName: node
   linkType: hard
 

@@ -9,7 +9,7 @@ export async function SyncGuildCommands(appId, guildId, commands) {
   const endpoint = `applications/${appId}/guilds/${guildId}/commands`;
 
   try {
-    console.log(commands);
+
     const res = await DiscordRequest(endpoint, { method: 'PUT', body: commands});
     const data = await res.json();
     
@@ -23,6 +23,6 @@ export async function SyncGuildCommands(appId, guildId, commands) {
 // Simple test command
 export const TEST_COMMAND = {
     name: 'test',
-    description: 'Basic guild command',
+    description: 'Basic guild command 1',
     type: 1,
 };

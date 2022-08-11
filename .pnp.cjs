@@ -34,6 +34,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["discord-interactions", "npm:3.2.0"],\
+            ["dotenv", "npm:16.0.1"],\
             ["express", "npm:4.18.1"],\
             ["node-fetch", "npm:3.2.10"]\
           ],\
@@ -57,6 +58,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["achilles", "workspace:."],\
             ["discord-interactions", "npm:3.2.0"],\
+            ["dotenv", "npm:16.0.1"],\
             ["express", "npm:4.18.1"],\
             ["node-fetch", "npm:3.2.10"]\
           ],\
@@ -206,6 +208,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["discord-interactions", "npm:3.2.0"],\
             ["tweetnacl", "npm:1.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["dotenv", [\
+        ["npm:16.0.1", {\
+          "packageLocation": "./.yarn/cache/dotenv-npm-16.0.1-d99e72bb95-f459ffce07.zip/node_modules/dotenv/",\
+          "packageDependencies": [\
+            ["dotenv", "npm:16.0.1"]\
           ],\
           "linkType": "HARD"\
         }]\
