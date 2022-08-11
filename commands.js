@@ -9,7 +9,9 @@ export async function SyncGuildCommands(appId, guildId, commands) {
   const endpoint = `applications/${appId}/guilds/${guildId}/commands`;
 
   try {
-    await DiscordRequest(endpoint, { method: 'PUT', body: commands});
+    const res = await DiscordRequest(endpoint, { method: 'PUT', body: commands});
+    console.log('Installed the following commands:')
+    console.log(res.map(c => c.name));
   } catch (err) {
     console.error(err);
   }
