@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import { verifyKey } from 'discord-interactions'
 
 export function VerifyDiscordRequest(clientKey) {
     return function (req, res, buf, encoding) {
