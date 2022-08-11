@@ -42,7 +42,7 @@ app.post('/interactions', verifyKeyMiddleware(process.env.PUBLIC_KEY), async fun
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 
-    HasGuildCommands(process.env.APP_ID, process.env.GUILD_ID, [
+    SyncGuildCommands(process.env.APP_ID, process.env.GUILD_ID, [
         TEST_COMMAND
     ]);
 })
