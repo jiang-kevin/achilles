@@ -12,7 +12,7 @@ export async function SyncGuildCommands(appId, guildId, commands) {
     console.log(commands);
     const res = await DiscordRequest(endpoint, { method: 'PUT', body: commands});
     console.log('Installed the following commands:')
-    console.log(res);
+    console.log(res.json());
   } catch (err) {
     console.error(err);
   }
