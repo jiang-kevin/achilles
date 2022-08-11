@@ -33,7 +33,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
-            ["express", "npm:4.18.1"]\
+            ["discord-interactions", "npm:3.2.0"],\
+            ["express", "npm:4.18.1"],\
+            ["node-fetch", "npm:3.2.10"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -54,7 +56,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["achilles", "workspace:."],\
-            ["express", "npm:4.18.1"]\
+            ["discord-interactions", "npm:3.2.0"],\
+            ["express", "npm:4.18.1"],\
+            ["node-fetch", "npm:3.2.10"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -146,6 +150,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["data-uri-to-buffer", [\
+        ["npm:4.0.0", {\
+          "packageLocation": "./.yarn/cache/data-uri-to-buffer-npm-4.0.0-e7a49f58f7-a010653869.zip/node_modules/data-uri-to-buffer/",\
+          "packageDependencies": [\
+            ["data-uri-to-buffer", "npm:4.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["debug", [\
         ["npm:2.6.9", {\
           "packageLocation": "./.yarn/cache/debug-npm-2.6.9-7d4cb597dc-d2f51589ca.zip/node_modules/debug/",\
@@ -183,6 +196,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/destroy-npm-1.2.0-6a511802e2-0acb300b74.zip/node_modules/destroy/",\
           "packageDependencies": [\
             ["destroy", "npm:1.2.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["discord-interactions", [\
+        ["npm:3.2.0", {\
+          "packageLocation": "./.yarn/cache/discord-interactions-npm-3.2.0-1168724448-5d06632428.zip/node_modules/discord-interactions/",\
+          "packageDependencies": [\
+            ["discord-interactions", "npm:3.2.0"],\
+            ["tweetnacl", "npm:1.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -263,6 +286,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["fetch-blob", [\
+        ["npm:3.2.0", {\
+          "packageLocation": "./.yarn/cache/fetch-blob-npm-3.2.0-28e01becfc-f19bc28a2a.zip/node_modules/fetch-blob/",\
+          "packageDependencies": [\
+            ["fetch-blob", "npm:3.2.0"],\
+            ["node-domexception", "npm:1.0.0"],\
+            ["web-streams-polyfill", "npm:3.2.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["finalhandler", [\
         ["npm:1.2.0", {\
           "packageLocation": "./.yarn/cache/finalhandler-npm-1.2.0-593d001463-92effbfd32.zip/node_modules/finalhandler/",\
@@ -275,6 +309,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["parseurl", "npm:1.3.3"],\
             ["statuses", "npm:2.0.1"],\
             ["unpipe", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["formdata-polyfill", [\
+        ["npm:4.0.10", {\
+          "packageLocation": "./.yarn/cache/formdata-polyfill-npm-4.0.10-e03013c013-82a34df292.zip/node_modules/formdata-polyfill/",\
+          "packageDependencies": [\
+            ["formdata-polyfill", "npm:4.0.10"],\
+            ["fetch-blob", "npm:3.2.0"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -459,6 +503,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["node-domexception", [\
+        ["npm:1.0.0", {\
+          "packageLocation": "./.yarn/cache/node-domexception-npm-1.0.0-e1e813b76f-ee1d37dd2a.zip/node_modules/node-domexception/",\
+          "packageDependencies": [\
+            ["node-domexception", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["node-fetch", [\
+        ["npm:3.2.10", {\
+          "packageLocation": "./.yarn/cache/node-fetch-npm-3.2.10-b87c28708a-e65322431f.zip/node_modules/node-fetch/",\
+          "packageDependencies": [\
+            ["node-fetch", "npm:3.2.10"],\
+            ["data-uri-to-buffer", "npm:4.0.0"],\
+            ["fetch-blob", "npm:3.2.0"],\
+            ["formdata-polyfill", "npm:4.0.10"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["object-inspect", [\
         ["npm:1.12.2", {\
           "packageLocation": "./.yarn/cache/object-inspect-npm-1.12.2-f125a822c0-a534fc1b85.zip/node_modules/object-inspect/",\
@@ -631,6 +696,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["tweetnacl", [\
+        ["npm:1.0.3", {\
+          "packageLocation": "./.yarn/cache/tweetnacl-npm-1.0.3-b7eef04660-e4a57cac18.zip/node_modules/tweetnacl/",\
+          "packageDependencies": [\
+            ["tweetnacl", "npm:1.0.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["type-is", [\
         ["npm:1.6.18", {\
           "packageLocation": "./.yarn/cache/type-is-npm-1.6.18-6dee4d4961-2c8e47675d.zip/node_modules/type-is/",\
@@ -665,6 +739,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/vary-npm-1.1.2-b49f70ae63-ae0123222c.zip/node_modules/vary/",\
           "packageDependencies": [\
             ["vary", "npm:1.1.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["web-streams-polyfill", [\
+        ["npm:3.2.1", {\
+          "packageLocation": "./.yarn/cache/web-streams-polyfill-npm-3.2.1-835bd3857e-b119c78574.zip/node_modules/web-streams-polyfill/",\
+          "packageDependencies": [\
+            ["web-streams-polyfill", "npm:3.2.1"]\
           ],\
           "linkType": "HARD"\
         }]\
