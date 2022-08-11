@@ -1,5 +1,6 @@
 import express from 'express';
 import {
+    verifyKeyMiddleware,
     InteractionType,
     InteractionResponseType,
     InteractionResponseFlags,
@@ -12,14 +13,11 @@ import { HasGuildCommands, TEST_COMMAND } from './commands.js';
 const app = express()
 const port = 3000
 
-// Parse request body and verifies incoming requests using discord-interactions package
-app.use(express.json({ verify: VerifyDiscordRequest(process.env.PUBLIC_KEY) }));
-
 app.get('/', (req, res) => {
     res.send('Hello World!')
 })
 
-app.post('/interactions', async function (req, res) {
+app.post('/interactions', verifyKeyMiddleware(process.env.PUBLIC_KEY), async function (req, res) {
     // Interaction type and data
     const { type, id, data } = req.body;
 
