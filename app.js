@@ -8,7 +8,7 @@ import {
     ButtonStyleTypes,
 } from 'discord-interactions';
 import { VerifyDiscordRequest } from './utils.js';
-import { HasGuildCommands, TEST_COMMAND } from './commands.js';
+import { SyncGuildCommands, TEST_COMMAND } from './commands.js';
 
 const app = express()
 const port = 3000
