@@ -8,7 +8,9 @@ import {
     MessageComponentTypes,
     ButtonStyleTypes,
 } from 'discord-interactions';
-import { SyncGuildCommands, TEST_COMMAND } from './commands.js';
+import { SyncGuildCommands } from './commands/commands-sync.js';
+import { ADD_COOKIE, TEST_COMMAND, VIEW_COOKIES } from './commands/command-defs.js';
+import { runApplicationCommand } from './commands/cmd-runner.js';
 
 const app = express()
 const port = 3000
@@ -26,16 +28,9 @@ app.post('/interactions', verifyKeyMiddleware(process.env.PUBLIC_KEY as string),
     }
 
     if (type === InteractionType.APPLICATION_COMMAND) {
-        const { name } = data;
-
-        if (name === 'test') {
-            return res.send({
-                type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
-                data: {
-                    content: 'Hello world!'
-                }
-            });
-        }
+        console.log('poggers');
+        let data = runApplicationCommand(req.body)
+        res.send(data);
     }
 })
 
@@ -43,6 +38,8 @@ app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 
     SyncGuildCommands(process.env.APP_ID as string, process.env.GUILD_ID as string, [
-        TEST_COMMAND
+        TEST_COMMAND,
+        ADD_COOKIE,
+        VIEW_COOKIES
     ]);
 })

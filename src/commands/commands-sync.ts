@@ -1,4 +1,4 @@
-import { DiscordRequest } from "./utils.js"
+import { DiscordRequest } from "../utils.js"
 
 export async function SyncGuildCommands(appId: string, guildId: string, commands: Command[]) {
   if (guildId === '' || appId === '') {
@@ -19,10 +19,3 @@ export async function SyncGuildCommands(appId: string, guildId: string, commands
     console.error(err);
   }
 }
-
-// Simple test command
-export const TEST_COMMAND = {
-    name: 'test',
-    description: 'Basic guild command 1',
-    type: 1,
-};
