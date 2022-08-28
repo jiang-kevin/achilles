@@ -28,7 +28,6 @@ app.post('/interactions', verifyKeyMiddleware(process.env.PUBLIC_KEY as string),
     }
 
     if (type === InteractionType.APPLICATION_COMMAND) {
-        console.log('poggers');
         let data = runApplicationCommand(req.body)
         res.send(data);
     }
