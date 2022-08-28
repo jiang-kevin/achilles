@@ -43,6 +43,6 @@ jobs:
       - name: Create SSH private key
         run: |
           echo env.SSH_PRIVATE_KEY > private.key
-          echo env.SSH_HOST
+          echo ${env.SSH_HOST}
           
         
